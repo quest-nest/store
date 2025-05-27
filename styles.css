@@ -119,3 +119,73 @@ footer a:hover {
     color: #ff4d4d; /* Brighter red on hover */
     text-decoration: underline;
 }
+
+
+.new-product-banner {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center;
+  justify-content: center;
+  background-color: #2a2a2a; /* Dark grey background to match the theme */
+  padding: 30px;
+  margin-bottom: 20px;
+  border: 2px solid #b71c1c; /* Blood-red border for consistency */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Stronger shadow for depth */
+  text-align: center; /* Center-align text */
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center;
+  gap: 20px;
+}
+
+.banner-image {
+  max-width: 300px; /* Make the image more prominent */
+  border-radius: 8px;
+  border: 2px solid #b71c1c; /* Blood-red glowing border */
+  box-shadow: 0 0 15px #b71c1c; /* Glowing effect for images */
+}
+
+.banner-text {
+  max-width: 800px; /* Allow more space for text */
+}
+
+.banner-text h1 {
+  font-size: 2.4rem; /* Slightly larger font for emphasis */
+  color: #d4d4dc; /* Light text for contrast */
+  text-shadow: 2px 2px 6px #000; /* Stronger glowing text effect */
+}
+
+.banner-text p {
+  margin: 10px 0;
+  color: #a8a8b3; /* Softer gray for text */
+}
+
+.banner-text .price {
+  font-size: 1.8rem; /* Larger font size for emphasis */
+  font-weight: bold;
+  color: #b71c1c; /* Blood-red for mystical feel */
+  margin: 0.5rem 0;
+  text-shadow: 2px 2px 5px #000; /* Stronger glowing effect */
+}
+
+.banner-button {
+  background-color: #b71c1c; /* Blood-red button */
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2rem; /* Slightly larger font for the button */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px #b71c1c; /* Glowing button effect */
+}
+
+.banner-button:hover {
+  background-color: #ff4d4d; /* Brighter red on hover */
+  transform: translateY(-3px); /* Slight lift effect */
+  box-shadow: 0 0 15px #ff4d4d; /* Stronger glow on hover */
+}
