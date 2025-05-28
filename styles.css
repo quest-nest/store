@@ -1,9 +1,26 @@
+@font-face {
+  font-family: 'CustomFont';
+  src: url('/black-chancery.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'CustomBodyFont';
+  src: url('/Niramit-Regular.ttf') format('truetype');
+}
+
 body {
-    font-family: 'Merriweather', serif; /* A more fantasy-like font */
+    font-family: 'CustomBodyFont', serif; /* A more fantasy-like font */
     margin: 0;
     padding: 0;
     background-color: #211f18; /* Dark grey background */
     color: #d4d4dc; /* Softer light text for contrast */
+}
+
+/* Apply the custom font to h1 and h2 */
+h1, h2 {
+  font-family: 'CustomFont', serif; /* Use your custom font with a fallback */
+  text-shadow: 2px 2px 6px #000; /* Keep the glowing effect */
+  color: #d4d4dc; /* Light text for contrast */
 }
 
 header {
